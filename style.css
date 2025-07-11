@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #f5f7fa;
+  background-color: #e0f7f7; /* Soft turquoise background */
   color: #2e2e2e;
   line-height: 1.6;
 }
@@ -36,7 +36,7 @@ header {
 .logo {
   font-size: 2rem;
   font-weight: 700;
-  color: #ffb703;
+  color: #0d9488; /* teal accent */
 }
 
 .nav-links {
@@ -53,7 +53,7 @@ header {
 }
 
 .nav-links a:hover {
-  color: #facc15;
+  color: #5eead4;
 }
 
 .hamburger {
@@ -81,7 +81,7 @@ header {
 .hero h1 {
   font-size: 3.5rem;
   font-weight: 800;
-  color: #ffb703;
+  color: #5eead4;
   margin-bottom: 1rem;
 }
 
@@ -109,7 +109,7 @@ header {
 
 /* About Card Style */
 .about-card {
-  background: linear-gradient(to bottom right, #ffffff, #f9fafb);
+  background: linear-gradient(to bottom right, #ffffff, #e0f7f7);
   padding: 30px;
   max-width: 800px;
   margin: 0 auto;
@@ -122,7 +122,7 @@ header {
 .about-card h2 {
   margin-bottom: 1rem;
   font-size: 2rem;
-  color: #111827;
+  color: #0f172a;
 }
 
 .about-card p {
@@ -163,19 +163,19 @@ header {
 
 .product-card h4 {
   font-size: 1.2rem;
-  color: #111827;
+  color: #0f172a;
   margin-bottom: 5px;
 }
 
 .product-card p {
-  color: #f97316;
+  color: #0d9488;
   font-weight: bold;
   font-size: 1rem;
   margin-bottom: 12px;
 }
 
 .product-card button {
-  background-color: #f97316;
+  background-color: #0d9488;
   color: white;
   border: none;
   padding: 10px 18px;
@@ -186,7 +186,7 @@ header {
 }
 
 .product-card button:hover {
-  background-color: #ea580c;
+  background-color: #0f766e;
 }
 
 /* Cart Summary */
@@ -250,7 +250,7 @@ footer {
 
 /* Contact */
 #contact a {
-  color: #f97316;
+  color: #0d9488;
   text-decoration: none;
 }
 
@@ -266,7 +266,7 @@ footer {
 }
 
 .btn {
-  background-color: #1e293b;
+  background-color: #0d9488;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -275,13 +275,13 @@ footer {
 }
 
 .btn:hover {
-  background-color: #0f172a;
+  background-color: #0f766e;
 }
 
 /* Utility */
 ::selection {
-  background: #ffb703;
-  color: white;
+  background: #5eead4;
+  color: #0f172a;
 }
 
 a,
