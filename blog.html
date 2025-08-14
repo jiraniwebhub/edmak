@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edmak | Blog</title>
+  <style>
+    /* 🌟 Base Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      line-height: 1.8;
+    }
+
+    /* 🌟 Header */
+    header {
+      background: linear-gradient(135deg, #ff4d00, #ff8800);
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* 🌟 Blog Container */
+    .blog-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+    }
+
+    /* 🌟 Blog Post Card */
+    .blog-post {
+      background: #1a1a1a;
+      border-radius: 15px;
+      overflow: hidden;
+      transform: translateY(20px);
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+
+    .blog-post.visible {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .blog-post img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .blog-post:hover img {
+      transform: scale(1.05);
+    }
+
+    .blog-post-content {
+      padding: 20px;
+    }
+
+    .blog-post h2 {
+      font-size: 1.6rem;
+      color: #ff6600;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .blog-post p {
+      color: #ccc;
+      font-size: 0.95rem;
+      text-align: justify;
+    }
+
+    /* 🌟 Footer */
+    footer {
+      background: #111;
+      color: #888;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    /* 🌟 Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+/* Floating Back Home Button */
+.back-home-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff9800;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 1000;
+}
+
+.back-home-btn:hover {
+  background-color: #e68900;
+  transform: scale(1.1);
+}
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Edmak Blog</h1>
+  <p>Insights, tips & inspiration for design, branding, and creativity</p>
+</header>
+
+<div class="blog-container">
+
+  <div class="blog-post">
+    <img src="images/blog1.jpg" alt="Why You Need Graphic Design">
+    <div class="blog-post-content">
+      <h2>Why Your Business Needs Professional Graphic Design</h2>
+      <p>
+        First impressions matter — and in a visual-first world, the way your brand looks can make or break a customer’s decision.
+        From your logo to your website, every element of your brand should be cohesive and visually appealing.
+      </p>
+      <p>
+        At Edmak, we design visuals that not only look great but also align with your brand’s personality and goals.
+        Our aim is to help you stand out in a crowded market.
+      </p>
+    </div>
+  </div>
+
+  <div class="blog-post">
+    <img src="images/blog2.jpg" alt="Brand Identity">
+    <div class="blog-post-content">
+      <h2>5 Steps to Build a Strong Brand Identity</h2>
+      <p>
+        Your brand identity is more than just a logo. It’s the personality, tone, and emotional connection you build with your audience.
+        Here are 5 tips:
+      </p>
+      <p>
+        1. Define your purpose.  
+        2. Understand your audience.  
+        3. Create a visual style.  
+        4. Be consistent.  
+        5. Tell your story.
+      </p>
+    </div>
+  </div>
+
+
+<div class="blog-post">
+  <img src="images/blog3.jpg" alt="Creative Printing Ideas">
+  <h2>Creative Printing Ideas to Boost Your Brand</h2>
+  <p>Printing goes beyond paper — explore custom fabrics, vehicle wraps, and unique promotional materials that make your brand unforgettable...</p>
+</div>
+
+<div class="blog-post">
+  <img src="images/blog4.jpg" alt="Marketing Through Merchandise">
+  <h2>How to Use Branded Merchandise for Marketing</h2>
+  <p>From mugs to T-shirts, branded items are powerful tools for staying on your customer’s mind every day...</p>
+</div>
+
+<div class="blog-post">
+  <img src="images/blog5.jpg" alt="Outdoor Advertising Tips">
+  <h2>Outdoor Advertising: Standing Out in Public Spaces</h2>
+  <p>Billboards, shop signage, and banners — discover how to design outdoor ads that grab attention instantly...</p>
+</div>
+
+
+
+
+
+</div>
+
+<!-- Floating Back Home Button -->
+<a href="index.html" class="back-home-btn" title="Back to Home">🏠Home</a>
+
+
+
+
+<footer>
+  &copy; 2025 Edmak Branding Solutions. All rights reserved.
+</footer>
+
+<script>
+  // 🌟 Scroll Animation
+  const posts = document.querySelectorAll('.blog-post');
+  const revealOnScroll = () => {
+    posts.forEach(post => {
+      const rect = post.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        post.classList.add('visible');
+      }
+    });
+  };
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll();
+</script>
+
+</body>
+</html>

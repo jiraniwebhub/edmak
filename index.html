@@ -3,273 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EDMARK Branding Store</title>
+  <title>EDMAK Branding Store</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <!-- ✅ Header with Navigation -->
-  <header class="main-header">
-    <div class="header-container">
-      <div class="logo">EDMARK</div>
-      <nav id="nav-menu">
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="hamburger" id="hamburger">☰</div>
-    </div>
-  </header>
+<header class="main-header">
+  <div class="header-container">
+    <!-- Logo -->
+    <div class="logo">EDMAK</div>
 
-  <!-- ✅ Hero Section (Full-width Image + Welcome Text) -->
-  <section class="hero">
-    <h1>Welcome to EDMARK</h1>
-    <p>Your one-stop solution for quality branding and merchandise.</p>
-  </section>
- 
+    <!-- Navigation Menu -->
+    <nav id="nav-menu">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="quotation.html" class="btn-nav">Get Quotation</a></li>
+        <li><a href="blog.html" class="btn-nav">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+
+      </ul>
+    </nav>
+
+    <!-- Mobile Menu Icon -->
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </div>
+</header>
+
+
+<!-- ✅ Hero Section (Full-width Image + Welcome Text) -->
+<section class="hero">
+  <div class="hero-overlay">
+    <h1>Welcome to <span class="highlight">EDMAK</span></h1>
+    <p>Your one-stop solution for <strong>quality branding</strong> and merchandise.</p>
+
+  </div>
+</section>
+
 <!-- ✅ About Section with Card Style -->
 <section id="about" class="section">
   <div class="about-card">
     <h2>About Us</h2>
-    <p>EDMARK is a creative branding solutions provider specializing in premium quality apparel, drinkware, stationery, banners, and vehicle branding. We turn ideas into reality with a touch of professionalism and style.</p>
+    <p>
+      At <strong>EDMAK</strong>, we specialize in creating unforgettable branding experiences.  
+      From premium apparel and drinkware to stationery, banners, and vehicle branding —  
+      we bring your vision to life with precision, creativity, and style.
+    </p>
   </div>
 </section>
 
-   <section id="products" class="section">
+
+
+
+
+<!-- ✅ Services Overview -->
+<section id="services" class="section">
   <div class="section-container">
-    <h2>Our Products</h2>
+    <h2>What We Do</h2>
+    <p class="section-lead">
+      High-impact design and production for businesses that want to stand out.
+    </p>
 
-    <!-- 🧥 BRANDED APPAREL -->
-    <section class="product-section">
-      <h3>🧥 BRANDED WEARS</h3>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="images/round-neck.jpg" alt="Branded Round Neck T-Shirts">
-          <h4>Branded Round Neck T-Shirts</h4>
-          <p>Ksh 3,500</p>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="images/hoodie.jpg" alt="Branded Hoodies">
-          <h4>Branded Hoodies</h4>
-          <p>Ksh 3,600</p>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="images/rice-neck.jpg" alt="Rice Neck Polo T-Shirts">
-          <h4>Rice Neck Polo T-Shirts</h4>
-          <p>Ksh 2,500</p>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="images/poloshirt.jpg" alt="Branded Poloshirts">
-          <h4>Branded Poloshirts</h4>
-          <p>Ksh 1,500</p>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="images/light-reflector.jpg" alt="Light Reflector Jacket">
-          <h4>Light Reflector Jacket</h4>
-          <p>Ksh 500</p>
-          <button>Add to Cart</button>
-        </div>
-      
-        <div class="product-card">
-          <img src="images/heavy-reflector.jpg" alt="Heavy Reflector Jacket">
-          <h4>Heavy Reflector Jacket</h4>
-          <p>Ksh 800</p>
-          <button>Add to Cart</button>
-        </div>
- <div class="product-card">
-          <img src="images/ordinarycaps.jpg" alt="ordinarycaps">
-          <h4>Branded Ordinary Caps</h4>
-          <p>Ksh 500</p>
-          <button>Add to Cart</button>
-        </div>
- <div class="product-card">
-          <img src="images/sportscaps.jpg" alt="sports caps">
-          <h4>Branded Sport Caps</h4>
-          <p>Ksh 800</p>
-          <button>Add to Cart</button>
-        </div>
-      </div>
-    </section>
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-icon">🎨</div>
+        <h3>Graphic Design</h3>
+        <p>Logos, posters, flyers, social media creatives, corporate profiles.</p>
+      </article>
 
-    <!-- 🖊 BRANDED STATIONERY -->
-    <section class="product-section">
-      <h3>🖊 BRANDED STATIONERY</h3>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="images/pen.jpg" alt="Branded Ordinary Pen">
-          <h4>Branded Ordinary Pen</h4>
-          <p>Ksh 200</p>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="images/exclusive-pen.jpg" alt="Exclusive Branded Pen">
-          <h4>Exclusive Branded Pen</h4>
-          <p>Ksh 300</p>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="images/keyring.jpg" alt="Branded Plastic Keyring">
-          <h4>Branded Normal Keyring (Plastic)</h4>
-          <p>Ksh 200</p>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="images/metal-keyring.jpg" alt="Exclusive Metallic Keyring">
-          <h4>Exclusive Branded Keyring (Metallic)</h4>
-          <p>Ksh 350</p>
-          <button>Add to Cart</button>
-        </div>
-         <div class="product-card">
-          <img src="images/normalumbrellas.jpg" alt="Normal Umbrellas">
-          <h4>Normal Umbrellas</h4>
-          <p>Ksh 1000</p>
-          <button>Add to Cart</button>
-        </div>
-         <div class="product-card">
-          <img src="images/golf-umbrella.jpg" alt="Golf Umbrellas">
-          <h4>Golf Umbrellas</h4>
-          <p>Ksh 1500</p>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="images/notebook.jpg" alt="Branded Notebook">
-          <h4>Branded Notebook</h4>
-          <p>Ksh 600</p>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="images/diary.jpg" alt="Branded Diary">
-          <h4>Branded Diary</h4>
-          <p>Ksh 800</p>
-          <button>Add to Cart</button>
-        </div>
-        
-    </section>
+      <article class="service-card">
+        <div class="service-icon">🖨️</div>
+        <h3>Printing</h3>
+        <p>Business cards, brochures, stickers, PVC, large-format, roll-ups.</p>
+      </article>
 
-    <!-- ☕ BRANDED DRINKWARE -->
-    <section class="product-section">
-      <h3>☕ BRANDED DRINKWARE</h3>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="images/mug.jpg" alt="White Branded Mug">
-          <h4>White Branded Mug</h4>
-          <p>Ksh 500</p>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="images/magic-mug.jpg" alt="Magic Branded Mug">
-          <h4>Magic Branded Mug</h4>
-          <p>Ksh 1,200</p>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="images/water-bottle.jpg" alt="Branded Water Bottle">
-          <h4>Branded Water Bottle</h4>
-          <p>Ksh 800</p>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="images/thermos.jpg" alt="Branded Thermos Flask">
-          <h4>Branded Thermos Flask</h4>
-          <p>Ksh 1,500</p>
-          <button>Add to Cart</button>
-        </div>
-      </div>
-    </section>
+      <article class="service-card">
+        <div class="service-icon">🧥</div>
+        <h3>Branding & Merchandise</h3>
+        <p>Apparel, caps, mugs, water bottles, umbrellas, diaries, notebooks.</p>
+      </article>
 
-    <!-- 🏷 TEAR DROPS BANNERS -->
-    <section class="product-section">
-      <h3>🏷 TEAR DROPS BANNERS</h3>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="images/teardrop-2.5m.jpg" alt="Tear Drop Banner 2.5 Metres">
-          <h4>2.5 METRES TEAR DROP BANNER</h4>
-          <p>Ksh 26,000</p>
-          <button>Add to Cart</button>
-        </div>
+      <article class="service-card">
+        <div class="service-icon">🚗</div>
+        <h3>Vehicle & Outdoor</h3>
+        <p>Vehicle wraps, tear-drops, backdrops, banners, shop signage.</p>
+      </article>
 
-        <div class="product-card">
-          <img src="images/teardrop-3.5m.jpg" alt="Tear Drop Banner 3.5 Metres">
-          <h4>3.5 METRES TEAR DROP BANNER</h4>
-          <p>Ksh 30,000</p>
-          <button>Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="images/teardrop-4.5m.jpg" alt="Tear Drop Banner 4.5 Metres">
-          <h4>4.5 METRES TEAR DROP BANNER</h4>
-          <p>Ksh 34,000</p>
-          <button>Add to Cart</button>
-      </div>
-    </section>
-
-    <!-- 🏷 BACKDROPBANNERS -->
-    <section class="product-section">
-      <h3>🏷 BACKDROP BANNERS</h3>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="images/backdrop-2.7m.jpg" alt="2.2 METRES by 2.7 METRES BACKDROP BANNER">
-          <h4>2.2 METRES by 2.7 METRES BACKDROP BANNER</h4>
-          <p>Ksh 45,000</p>
-          <button>Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <img src="images/backdrop-3.0m.jpg" alt="Backdrop Banner 3.0 Metres">
-          <h4>3.0 METRES by 2.7 METRES BACKDROP BANNER</h4>
-          <p>Ksh 50,000</p>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="images/backdrop-3.7m.jpg" alt="Backdrop Banner 3.7 Metres">
-          <h4>3.7 METRES by 2.7 METRES BACKDROP BANNER</h4>
-          <p>Ksh 58,000</p>
-          <button>Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="images/backdrop-4.5m.jpg" alt="Backdrop Banner 4.5 Metres">
-          <h4>4.5 METRES by 2.7 METRES BACKDROP BANNER</h4>
-          <p>Ksh 62,000</p>
-          <button>Add to Cart</button>
-      </div>
-
-    </section>
-    <!-- 🏷 ROLL-UP BANNERS -->
-
-   <section class="product-section">
-  <h3>🏷 ROLL-UP BANNERS</h3>
-  <div class="product-grid">
-    <div class="product-card">
-      <img src="images/light-rollup.jpg" alt="Light Base Roll-Up Banner">
-      <h4>Light Base Roll-Up Banner</h4>
-      <p>Ksh 10,000</p>
-      <button>Add to Cart</button>
-    </div>
-    <div class="product-card">
-      <img src="images/broad-rollup.jpg" alt="Broad Base Roll-Up Banner">
-      <h4>Broad Base Roll-Up Banner</h4>
-      <p>Ksh 12,000</p>
-      <button>Add to Cart</button>
+    <div class="center">
+      <a href="gallery.html" class="btn link">See Featured Products</a>
     </div>
   </div>
 </section>
 
-<!-- 🏷 PVC BANNERS -->
+
+<!-- 🛍 PRODUCT HIGHLIGHTS -->
 <section class="product-section">
-  <h3>🏷 PVC BANNERS</h3>
+  <h2>Our Products</h2>
+  <p>Browse a few of our top items. Visit our <a href="gallery.html">Full Gallery</a> for more.</p>
+
+  <!-- 🧥 BRANDED WEARS -->
+  <h3>🧥 Branded Wears</h3>
   <div class="product-grid">
     <div class="product-card">
-      <img src="images/pvc-banner-1.jpg" alt="PVC Banner">
-      <h4>PVC Per Square Metre</h4>
-      <p>Ksh 1,000</p>
-      <button>Add to Cart</button>
+      <img src="images/round-neck.jpg" alt="Branded Round Neck T-Shirts">
+      <h4>Branded Round Neck T-Shirts</h4>
+      <p>Ksh 3,500</p>
     </div>
+    <div class="product-card">
+      <img src="images/hoodie.jpg" alt="Branded Hoodies">
+      <h4>Branded Hoodies</h4>
+      <p>Ksh 3,600</p>
+    </div>
+    <div class="product-card">
+      <img src="images/poloshirt.jpg" alt="Branded Poloshirts">
+      <h4>Branded Poloshirts</h4>
+      <p>Ksh 1,500</p>
+    </div>
+  </div>
+
+  <!-- 🖊 BRANDED STATIONERY -->
+  <h3>🖊 Branded Stationery</h3>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="images/pen.jpg" alt="Branded Ordinary Pen">
+      <h4>Branded Ordinary Pen</h4>
+      <p>Ksh 200</p>
+    </div>
+    <div class="product-card">
+      <img src="images/keyring.jpg" alt="Branded Keyring">
+      <h4>Branded Plastic Keyring</h4>
+      <p>Ksh 200</p>
+    </div>
+    <div class="product-card">
+      <img src="images/notebook.jpg" alt="Branded Notebook">
+      <h4>Branded Notebook</h4>
+      <p>Ksh 600</p>
+    </div>
+  </div>
+
+  <!-- ☕ BRANDED DRINKWARE -->
+  <h3>☕ Branded Drinkware</h3>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="images/mug.jpg" alt="White Branded Mug">
+      <h4>White Branded Mug</h4>
+      <p>Ksh 500</p>
+    </div>
+    <div class="product-card">
+      <img src="images/magic-mug.jpg" alt="Magic Mug">
+      <h4>Magic Branded Mug</h4>
+      <p>Ksh 1,200</p>
+    </div>
+  </div>
+
+  <div class="view-more">
+    <a href="gallery.html" class="btn">View Full Gallery</a>
   </div>
 </section>
 
@@ -277,63 +166,6 @@
 
 
 
-<!-- 🚗 VEHICLE BRANDING -->
-<section class="product-section">
-  <h3>🚗 VEHICLE BRANDING</h3>
-
-  <!-- ISUZU MAX -->
-
-  <h4>ISUZU MAX</h4>
-  <div class="product-grid">
-    <div class="product-card">
-      <img src="images/isuzu-maxx.jpg" alt="Isuzu Max Full Branding">
-      <h4>Full Branding</h4>
-      <p>Ksh 55,000</p>
-     
-      <button>Add to Cart</button>
-    </div>
-    <div class="product-card">
-      <img src="images/isuzu-max-partiall.jpg" alt="Isuzu Max Partial Branding">
-      <h4>Partial Branding</h4>
-      <p>Ksh 30,500</p>
-      <button>Add to Cart</button>
-    </div>
-  </div>
-
-  <!-- ISUZU DMAX -->
-  <h4>DMAX</h4>
-  <div class="product-grid">
-    <div class="product-card">
-      <img src="images/isuzu-dmax-partiall.jpg" alt="Isuzu DMax Partial Branding">
-      <h4>Partial Branding</h4>
-      <p>Ksh 25,000</p>
-      <button>Add to Cart</button>
-    </div>
-    <div class="product-card">
-      <img src="images/isuzu-dmax-fulll.jpg" alt="Isuzu DMax Full Branding">
-      <h4>Full Branding</h4>
-      <p>Ksh 40,000</p>
-      <button>Add to Cart</button>
-    </div>
-  </div>
-
-  <!-- TOYOTA HIACE -->
-  <h4>TOYOTA HIACE</h4>
-  <div class="product-grid">
-    <div class="product-card">
-      <img src="images/toyota-hiace-partial.jpg" alt="Toyota Hiace Partial Branding">
-      <h4>Partial Branding</h4>
-      <p>Ksh 35,000</p>
-      <button>Add to Cart</button>
-    </div>
-    <div class="product-card">
-      <img src="images/toyota-hiace-full.jpg" alt="Toyota Hiace Full Branding">
-      <h4>Full Branding</h4>
-      <p>Ksh 70,000</p>
-      <button>Add to Cart</button>
-    </div>
-  </div>
-</section>
 
 <!-- 🛒 Cart Summary Section -->
 <div id="cart-summary" class="cart-summary">
@@ -346,7 +178,75 @@
 </section>
 
 
+
+<!-- ✅ Testimonials -->
+<section id="testimonials" class="section">
+  <div class="section-container">
+    <h2>What Clients Say</h2>
+
+    <div class="testimonials">
+      <figure class="testimonial">
+        <blockquote>
+          “EDMAK delivered our event backdrops and tear-drop banners on time and the print quality was perfect.”
+        </blockquote>
+        <figcaption>— Mary Nyaguthii., Event Planner</figcaption>
+      </figure>
+
+      <figure class="testimonial">
+        <blockquote>
+          “We rebranded our uniforms and mugs with EDMAK. Clean design, great materials — highly recommend.”
+        </blockquote>
+        <figcaption>— Kelvin Wafula., Café Owner</figcaption>
+      </figure>
+
+      <figure class="testimonial">
+        <blockquote>
+          “Professional from design to delivery. Our pickup wrap turned heads the first day on the road.”
+        </blockquote>
+        <figcaption>— Brian Kimanzi., Logistics</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+<div class="btn-center">
+  <a href="quotation.html" class="btn-quote">Get a Quotation</a>
+</div>
+
+
+
+<section id="mpesa" class="section">
+  <h2>Lipa na M-Pesa</h2>
+  <div class="mpesa-card">
+    <p>Paybill: <strong>123456</strong></p>
+    <p>Account Number: <strong>Your Name or Order ID</strong></p>
+    <p>Once payment is made, send the confirmation to our WhatsApp.</p>
+    <a href="https://wa.me/254722441823" class="btn">Send Payment Confirmation</a>
+  </div>
+</section>
+
+
+<div class="btn-center">
+
+<p><a href="blog.html" class="btn">Visit Our Blog</a></p>
+</div>
+
+
+
+
+<!-- Last main section -->
+<section class="call-to-action">
+  <h2>Work with Us</h2>
+  <p>Let’s create something amazing together. Contact us today.</p>
+</section>
+
+
+
+
+
 <!-- 🌐 FOOTER -->
+
 <footer class="main-footer">
   <div class="footer-container">
     <p>&copy; 2023 EDMARK Branding Store. All rights reserved.</p>
@@ -357,6 +257,8 @@
     </p>
   </div>
 </footer>
+
+
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const cart = [];
@@ -414,7 +316,7 @@
   });
 </script>
 
- `
+ 
 
   <!-- ✅ JavaScript for Hamburger Menu -->
   <script>
@@ -425,5 +327,26 @@
       navLinks.classList.toggle('active');
     });
   </script>
+
+
+<!-- ✅ Floating WhatsApp Button -->
+<a href="https://wa.me/254722441823" 
+   class="whatsapp-float" 
+   target="_blank" 
+   title="Chat with us on WhatsApp">
+   💬 Chat with us on WhatsApp
+</a>
+
+
+
+<script>
+  function sendToWhatsApp() {
+    // Simple example — You can customize the message
+    const message = encodeURIComponent("Hello Edmak, I would like to request a quotation for your services.");
+    window.open(`https://wa.me/254722441823?text=${message}`, '_blank');
+  }
+</script>
+
+
 </body>
 </html>
