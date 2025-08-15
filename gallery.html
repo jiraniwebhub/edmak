@@ -125,6 +125,14 @@
           <p>Ksh 600</p>
           <button>Add to Cart</button>
         </div>
+
+<div class="product-card">
+          <img src="images/giftnotebook.jpg.jpg" alt="Branded Notebook">
+          <h4>Branded Notebook</h4>
+          <p>Ksh 600</p>
+          <button>Add to Cart</button>
+        </div>
+
         <div class="product-card">
           <img src="images/diary.jpg" alt="Branded Diary">
           <h4>Branded Diary</h4>
@@ -150,6 +158,14 @@
           <p>Ksh 1,200</p>
           <button>Add to Cart</button>
         </div>
+
+ <div class="product-card">
+          <img src="images/cupmug.jpg.jpg" alt="Magic Branded Mug">
+          <h4>Magic Branded Mug</h4>
+          <p>Ksh 1,200</p>
+          <button>Add to Cart</button>
+        </div>
+
         <div class="product-card">
           <img src="images/water-bottle.jpg" alt="Branded Water Bottle">
           <h4>Branded Water Bottle</h4>
@@ -314,6 +330,76 @@
       <p>Ksh 70,000</p>
       <button>Add to Cart</button>
     </div>
+
+     <div class="product-card">
+      <img src="images/tx.jpg.jpg" alt="Toyota TX">
+      <h4>Full Branding</h4>
+      <p>Ksh 65 ,000</p>
+      <button>Add to Cart</button>
+    </div>
+
+     <div class="product-card">
+      <img src="images/probox.jpg.jpg" alt="Toyota TX">
+      <h4>Full Branding</h4>
+      <p>Ksh 50,000</p>
+      <button>Add to Cart</button>
+    </div>
+
+     <div class="product-card">
+      <img src="images/pickup.jpg.jpg" alt="Toyota Pickup">
+      <h4>Full Branding</h4>
+      <p>Ksh 70,000</p>
+      <button>Add to Cart</button>
+    </div>
+    
+    
+     <div class="product-card">
+      <img src="images/hondafit.jpg.jpg" alt="Toyota Pickup">
+      <h4>Full Branding</h4>
+      <p>Ksh 40,000</p>
+      <button>Add to Cart</button>
+    </div>
+
+    
+     <div class="product-card">
+      <img src="images/dmax.jpg.jpg" alt="Toyota Pickup">
+      <h4>Full Branding</h4>
+      <p>Ksh 70,000</p>
+      <button>Add to Cart</button>
+    </div>
+
+
+    
+     <div class="product-card">
+      <img src="images/bus.jpg.jpg" alt="bus">
+      <h4>Full Branding</h4>
+      <p>Ksh 120,000</p>
+      <button>Add to Cart</button>
+    </div>
+
+
+     <div class="product-card">
+      <img src="images/saloon.jpg.jpg" alt="Toyota Saloon">
+      <h4>Full Branding</h4>
+      <p>Ksh 40,000</p>
+      <button>Add to Cart</button>
+    </div>
+
+
+     <div class="product-card">
+      <img src="images/smalllorry.jpg.jpg" alt="small lorry">
+      <h4>Full Branding</h4>
+      <p>Ksh 70,000</p>
+      <button>Add to Cart</button>
+    </div>
+
+     <div class="product-card">
+      <img src="images/smallvan.jpg.jpg" alt="Toyota van">
+      <h4>Full Branding</h4>
+      <p>Ksh 50,000</p>
+      <button>Add to Cart</button>
+    </div>
+
   </div>
 </section>
 
@@ -344,6 +430,115 @@
       <p>&copy; 2025 Your Company Name. All rights reserved.</p>
     </div>
   </footer>
+
+
+
+  <!-- Image Modal -->
+<div id="image-modal" class="image-modal">
+  <span class="close-btn">&times;</span>
+  <img id="modal-img" src="" alt="Product Image">
+</div>
+<style>
+/* Modal Background */
+.image-modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000;
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(0,0,0,0.6); /* dark overlay */
+  justify-content: center; 
+  align-items: center;
+}
+
+/* Modal Image (Quarter Screen) */
+.image-modal img {
+  max-width: 25%; /* quarter screen width */
+  max-height: 25%; /* quarter screen height */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15%;
+  right: 37%;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgba(0,0,0,0.5);
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.close-btn:hover {
+  background: rgba(255,0,0,0.6);
+}
+
+/* Modal Image (Bigger but not full screen) */
+.image-modal img {
+  max-width: 75%; /* 3 times bigger than before */
+  max-height: 75%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10%;
+  right: 12%;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgba(0,0,0,0.5);
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.close-btn:hover {
+  background: rgba(255,0,0,0.6);
+}
+
+
+
+</style>
+
+
+
+
+<script>
+  // Get elements
+  const modal = document.getElementById("image-modal");
+  const modalImg = document.getElementById("modal-img");
+  const closeBtn = document.querySelector(".close-btn");
+
+  // Add click event to all product images
+  document.querySelectorAll(".product-card img").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "flex"; // Show modal
+      modalImg.src = img.src;       // Set clicked image
+      modalImg.alt = img.alt;
+    });
+  });
+
+  // Close modal on 'X' click
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Close modal if clicking outside image
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
 
 </body>
 </html>
