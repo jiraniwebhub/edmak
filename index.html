@@ -8,26 +8,47 @@
 </head>
 <body>
   <!-- ✅ Header with Navigation -->
-<header class="main-header">
-  <div class="header-container">
-    <!-- Logo -->
-    <div class="logo">EDMAK</div>
+  <header class="main-header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="logo">EDMAK</div>
 
-    <!-- Navigation Menu -->
+      <!-- Hamburger button (only shows on mobile) -->
+      <div class="hamburger" id="hamburger">☰</div>
+
+      <!-- Navigation Menu -->
+      <nav id="nav-menu">
+        <!-- Close button -->
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="quotation.html" class="btn-nav">Get Quotation</a></li>
+          <li><a href="blog.html" class="btn-nav">Blog</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const hamburger = document.getElementById('hamburger');
+      const navMenu = document.getElementById('nav-menu');
+      const closeBtn = document.getElementById('close-btn');
+
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.add('active'); // open menu
+      });
+
+      closeBtn.addEventListener('click', () => {
+        navMenu.classList.remove('active'); // close menu
+      });
+    });
+  </script>
 
 
-
-
-    <nav id="nav-menu">
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="quotation.html" class="btn-nav">Get Quotation</a></li>
-    <li><a href="blog.html" class="btn-nav">Blog</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="#testimonials">Testimonials</a></li>
-    <li><a href="#mpesa">Mpesa</a></li>
-  </ul>
-</nav>
 
 
     <!-- Mobile Menu Icon -->
@@ -220,15 +241,6 @@
 
 
 
-<section id="mpesa" class="section">
-  <h2>Lipa na M-Pesa</h2>
-  <div class="mpesa-card">
-    <p>Paybill: <strong>123456</strong></p>
-    <p>Account Number: <strong>Your Name or Order ID</strong></p>
-    <p>Once payment is made, send the confirmation to our WhatsApp.</p>
-    <a href="https://wa.me/254722441823" class="btn">Send Payment Confirmation</a>
-  </div>
-</section>
 
 
 <div class="btn-center">
@@ -504,33 +516,12 @@
 
 
 
-<script>
-  // Get elements
-  const modal = document.getElementById("image-modal");
-  const modalImg = document.getElementById("modal-img");
-  const closeBtn = document.querySelector(".close-btn");
 
-  // Add click event to all product images
-  document.querySelectorAll(".product-card img").forEach(img => {
-    img.addEventListener("click", () => {
-      modal.style.display = "flex"; // Show modal
-      modalImg.src = img.src;       // Set clicked image
-      modalImg.alt = img.alt;
-    });
-  });
 
-  // Close modal on 'X' click
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
+  
 
-  // Close modal if clicking outside image
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.style.display = "none";
-    }
-  });
 </script>
+
 
 
 
